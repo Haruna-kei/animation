@@ -1,0 +1,84 @@
+/**
+ * 共通部品
+ *
+ * @format
+ */
+
+html {
+    font-family: Inter;
+    color: #333;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+/* ここから記述します。 */
+
+.u-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.u-sectionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px 0;
+}
+
+.u-sectiontitle {
+    font-size: clamp(24px, 2.5vw, 32px);
+    text-align: center;
+}
+
+
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 16px 20px;
+}
+
+.header__title {
+    font-size: clamp(18px, 3.125vw, 40px);
+}
+
+.header__nav {
+    display: flex;
+    gap: 16px;
+}
+
+.header__link {
+
+}
+
+/*ABOUT*/
+.about__inner {
+  text-align: center;
+}
+
+
+
+.about__picture {
+
+}
+
+.about__container {
+
+}
+
+.about__name {
+
+}
+
+.about__text {
+
+}
+
+/*footer*/
+.footer_text {
+    text-align: center;
+}
+
+
+
+

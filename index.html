@@ -1,0 +1,75 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+    <meta charset="utf-8" />
+    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- ウェブページのタイトルに使用されます。 -->
+    <title>Taro's Scenery</title>
+    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+    <meta name="description" content="フォトグラファーの山田太郎です" />
+    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- reset.cssは、destyleを使用しています。 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <!-- スタイルシート（css）を呼び出しています -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   <header class="header u-wrapper">
+    <h1 class="header__title">Taro's Scenery</h1>
+    <nav>
+      <ul class="header__nav">
+        <li>
+          <a href="#about" class="header__link">ABOUT</a>
+        </li>
+        <li>
+          <a href="#works" class="header__link">WORKS</a>
+        </li>
+      </ul>
+    </nav>
+   </header>
+   <section class="about">
+     <h2 class="u-sectiontitle">ABOUT</h2>
+     <div class="about__inner u-wrapper u-sectionWrapper">
+    <figure class="about__picture">
+      <img src="image/about.png" alt="山田太郎のサムネイル">
+    </figure>
+    <div class="about__container">
+      <h3 class="about__name">山田　太郎</h3>
+      <p class="about__text">フォトグラファーの山田です。<br>
+      よろしくお願いいたします</p>
+    </div>
+  </div>
+   </section>
+   <section class="works">
+    <h2 class="u-sectiontitle">ABOUT</h2>
+   
+      <ul class="works__container u-sectionWrapper">
+        <li class="works__item">
+          <img class="works__img" src="image/works1.png" alt="">
+          <p class="works__itemTitle">Sunrise</p>
+        </li>
+        <li class="works__item">
+          <img class="works__img" src="image/works2.png" alt="">
+          <p class="works__itemTitle">Night View</p>
+        </li>
+        <li class="works__item">
+          <img class="works__img" src="image/works3.png" alt="">
+          <p class="works__itemTitle">Architecture</p>
+        </li>
+      </ul>
+    </div>
+   </section>
+   <footer class="footer">
+    <p class="footer_text">© 2023 Taro's Scenery</p>
+   </footer>
+   </footer>
+  </body>
+</html>
