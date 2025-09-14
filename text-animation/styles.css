@@ -1,0 +1,59 @@
+:root {
+  --duration: 1s; /* 1行あたりの再生時間 */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.wrapper__img,
+.wrapper__text {
+  flex: 1;
+}
+
+.text {
+  margin: 0;
+}
+
+.text__under,
+.text__over {
+  font-size: 60px;
+  font-weight: bold;
+  grid-area: 1 / 1;
+}
+
+.wrapper__text {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.text__line {
+  display: block;
+}
+
+.text__under .text__line{
+  color: #d8d8d8;
+}
+
+
+.text__over .text__line {
+  color: #000;
+  clip-path: inset(0 100% 0 0);
+  animation: reveal var(--duration) ease forwards;
+}
+
+.text__over .text__line:nth-child(1) { animation-delay: calc(var(--duration) * 0); }
+.text__over .text__line:nth-child(2) { animation-delay: calc(var(--duration) * 1); }
+.text__over .text__line:nth-child(3) { animation-delay: calc(var(--duration) * 2); }
+
+/* クリップを開くアニメーション */
+@keyframes reveal {
+  from { clip-path: inset(0 100% 0 0); } /* 上0　右100％　下0　左0を切り取る */
+  to   { clip-path: inset(0 0 0 0); }
+}
