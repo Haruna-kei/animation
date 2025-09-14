@@ -15,6 +15,13 @@
   flex: 1;
 }
 
+.wrapper__img {
+  height: 100%;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+}
+
 .text {
   margin: 0;
 }
